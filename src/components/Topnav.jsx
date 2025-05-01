@@ -22,7 +22,7 @@ export const Topnav = () => {
   }, [query]);
 
   return (
-    <div className="w-fit h-[10vh]  relative flex justify-start ml-[15%]  items-center">
+    <div className="w-full h-[10vh]  relative flex justify-start ml-[15%]  items-center">
       <i className="text-zinc-400 text-3xl ri-search-line"></i>
       <input
         onChange={(e) => setquery(e.target.value)}

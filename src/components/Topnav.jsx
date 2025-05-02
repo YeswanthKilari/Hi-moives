@@ -23,7 +23,7 @@ export const Topnav = () => {
 
   return (
     <div className="w-full h-[10vh]  relative flex justify-start ml-[15%]  items-center">
-      <i className="text-zinc-400 text-3xl ri-search-line"></i>
+      <i className="text-zinc-400 text-xl ri-search-line"></i>
       <input
         onChange={(e) => setquery(e.target.value)}
         value={query}
@@ -38,13 +38,13 @@ export const Topnav = () => {
         ></i>
       )}
 
-      <div className="absolute w-[50%] max-h-[50vh] top-[90%] bg-zinc-200 overflow-auto">
+      <div className="absolute w-[50%] max-h-[40vh] top-[90%] bg-zinc-200 overflow-auto">
         {searchs.map((s, i) => {
           return (
             <Link
               key={i}
               className="hover:bg-zinc-300 hover:text-black w-[100%] 
-                  p-10 flex shadow-2xl justify-start items-center border-2 border-zinc-100"
+                  p-2 flex shadow-xl justify-start items-center border-2 border-zinc-100"
             >
               <img
                 className="w-[10vh] h-[10vh] object-cover rounded-2xl mr-5 "
